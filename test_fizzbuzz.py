@@ -23,3 +23,9 @@ class FizzBuzzTest(unittest.TestCase):
     def test_should_return_fizzbuzz_if_num_is_multiple_of_3_and_5(self):
         result = FizzBuzz().fizzbuzz(15)
         self.assertEqual("FizzBuzz", result)
+
+    def test_should_raise_typeerror_if_input_is_not_positive_integer(self):
+
+        with self.assertRaises(ValueError):
+            FizzBuzz().fizzbuzz(-4)
+
