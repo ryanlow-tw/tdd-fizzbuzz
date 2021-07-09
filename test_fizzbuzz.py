@@ -35,3 +35,7 @@ class FizzBuzzTest(unittest.TestCase):
         with self.assertRaises(TypeError):
             FizzBuzz().fizzbuzz("asd")
 
+    def test_should_raise_type_error_if_input_is_float(self):
+        with self.assertRaises(TypeError):
+            FizzBuzz().fizzbuzz(3.14)
+
