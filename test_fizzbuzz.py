@@ -47,4 +47,6 @@ class FizzBuzzTest(unittest.TestCase):
         with self.assertRaises(TypeError):
             FizzBuzz().fizzbuzz(3.14)
 
-
+    def test_fizzbuzz_loop_should_raise_type_error_if_input_is_negative_int(self):
+        with self.assertRaises(ValueError):
+            FizzBuzz().fizzbuzz(-4)
