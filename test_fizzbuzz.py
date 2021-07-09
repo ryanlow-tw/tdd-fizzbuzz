@@ -43,4 +43,8 @@ class FizzBuzzTest(unittest.TestCase):
         result = FizzBuzz().fizzbuzz_loop(5)
         self.assertEqual("1 2 Fizz 4 Buzz", result)
 
+    def test_fizzbuzz_loop_should_raise_type_error_if_input_is_float(self):
+        with self.assertRaises(TypeError):
+            FizzBuzz().fizzbuzz(3.14)
+
 
