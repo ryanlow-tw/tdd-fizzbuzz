@@ -4,9 +4,9 @@ from fizzbuzz import FizzBuzz
 
 class FizzBuzzTest(unittest.TestCase):
 
-    def test_should_return_fizz_is_0(self):
+    def test_should_return_fizzbuzz_if_number_is_0(self):
         result = FizzBuzz().fizzbuzz(0)
-        self.assertEqual("Fizz", result)
+        self.assertEqual("FizzBuzz", result)
 
     def test_should_return_same_number_if_not_multiple_of_3_and_5_if_num_is_4(self):
         result = FizzBuzz().fizzbuzz(4)
