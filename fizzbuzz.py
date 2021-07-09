@@ -14,4 +14,10 @@ class FizzBuzz:
         return number
 
     def fizzbuzz_loop(self, number):
-        pass
+        result = ""
+        for i in range(1, number + 1):
+            fizzbuzz = self.fizzbuzz(i)
+
+            result += (str(fizzbuzz) + " ")
+
+        return result.strip()

@@ -41,6 +41,6 @@ class FizzBuzzTest(unittest.TestCase):
 
     def test_should_return_all_values_from_1_to_input_in_a_concatenated_string(self):
         result = FizzBuzz().fizzbuzz_loop(5)
-        self.assertEqual("1, 2, Fizz, 4, Buzz", result)
+        self.assertEqual("1 2 Fizz 4 Buzz", result)
 
 
