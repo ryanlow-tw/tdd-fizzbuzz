@@ -15,3 +15,7 @@ class FizzBuzzTest(unittest.TestCase):
     def test_should_return_fizz_if_num_is_multiple_of_3(self):
         result = FizzBuzz().fizzbuzz(3)
         self.assertEqual("Fizz", result)
+
+    def test_should_return_buzz_if_num_is_multiple_of_5(self):
+        result = FizzBuzz().fizzbuzz(5)
+        self.assertEqual("Buzz", result)
