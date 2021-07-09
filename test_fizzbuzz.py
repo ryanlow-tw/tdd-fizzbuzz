@@ -26,6 +26,7 @@ class FizzBuzzTest(unittest.TestCase):
 
     def test_should_raise_typeerror_if_input_is_not_positive_integer(self):
 
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ValueError) as cm:
             FizzBuzz().fizzbuzz(-4)
-
+        the_exception = cm.exception
+        self.assertEqual(f"{the_exception}", "Please input a positive integer!")
