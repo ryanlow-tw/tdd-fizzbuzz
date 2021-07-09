@@ -12,3 +12,6 @@ class FizzBuzz:
         elif number % 5 == 0:
             return "Buzz"
         return number
+
+    def fizzbuzz_loop(self, number):
+        pass
