@@ -1,6 +1,10 @@
 class FizzBuzz:
 
     def fizzbuzz(self, number):
+
+        if type(number) is not int:
+            raise TypeError
+
         if number < 0:
             raise ValueError("Please input a positive integer!")
 
